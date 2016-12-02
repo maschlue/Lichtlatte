@@ -8,7 +8,7 @@ void Animation01()
  
   
   FastLED.clear();
-  
+  MitteDerStrippe=NUM_LEDS/2;
   LSTART=((NUM_LEDS/2)+1);
   RSTART=NUM_LEDS/2;
   LEND=(MitteDerStrippe*BassSmoothed)/100+MitteDerStrippe+1;
