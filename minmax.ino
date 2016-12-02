@@ -1,0 +1,47 @@
+void minmax()
+{
+  if(LEFT>LEFT_MAX)
+  {LEFT_MAX=LEFT;}
+  if(RIGHT>RIGHT_MAX)
+  {RIGHT_MAX=RIGHT;}
+  if(MID>MID_MAX)
+  {MID_MAX=MID;}
+  if(TREM>TREM_MAX)
+  {TREM_MAX=TREM;}
+  if(BASS>BASS_MAX)
+  {BASS_MAX=BASS;}
+  if(BASS<BASS_MIN)
+  {BASS_MIN=BASS;}
+  if(TREM<TREM_MIN)
+  {TREM_MIN=TREM;}
+  if(MID<MID_MIN)
+  {MID_MIN=MID;}
+  if(RIGHT<RIGHT_MIN)
+  {RIGHT_MIN=RIGHT;}
+  if(LEFT<LEFT_MIN)
+  {LEFT_MIN=LEFT;}
+  Serial.print("MAX");
+  Serial.print("\t");
+  Serial.print(LEFT_MAX);
+  Serial.print("\t");
+  Serial.print(RIGHT_MAX);
+  Serial.print("\t");
+  Serial.print(BASS_MAX);
+  Serial.print("\t");
+  Serial.print(MID_MAX);
+  Serial.print("\t");
+  Serial.print(TREM_MAX);
+  Serial.print("\t");
+  Serial.print("MIN");
+  Serial.print("\t");
+  Serial.print(LEFT_MIN);
+  Serial.print("\t");
+  Serial.print(RIGHT_MIN);
+  Serial.print("\t");
+  Serial.print(BASS_MIN);
+  Serial.print("\t");
+  Serial.print(MID_MIN);
+  Serial.print("\t");
+  Serial.println(TREM_MIN);
+
+}
