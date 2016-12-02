@@ -134,7 +134,6 @@ void setup() {
   Serial.begin(115200);
   Serial.println("setup erfolgreich");
   delay(200);
-MitteDerStrippe=NUM_LEDS/2;
   
   
     pinMode    (reset, OUTPUT);    // reset
